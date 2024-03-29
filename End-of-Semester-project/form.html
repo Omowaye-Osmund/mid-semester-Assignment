@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <title>Application form</title>
+  <link rel="stylesheet" type="text/css" href="./style/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./js/scripts.js"></script>
+</head>
+
+<body style="text-align: center;">
+    <form action="#" name="myForm" onsubmit="return personalValidate(event)">
+        <p style="color: blue;">Enter your name:</p>
+        <div><input type="text" id="user" placeholder="Username"><br>
+      <span id="message"></span>
+    </div>
+
+    <p style="color: blue;">Please enter your gender:</p>
+    <p style="color: blue;">Male:</p> <input type="radio" id="male" name="gender" value="male">
+    <br>
+    <p style="color: blue;">Female:</p><input type="radio" id="female" name="gender" value="female">
+    <br>
+    <p style="color: blue;">Rather not tell:</p>
+    <input type="radio" name="gender" id="other" value="rather not tell">
+    <br>
+    <span id="sex"></span>
+
+    <p style="color: blue;">Enter your official E-mail address:</p>
+    <input type="email" id="email" placeholder="E-mail"><br>
+    <span id="e-mail"></span>
+
+    <p>Input your phone number here</p>
+    <input type="tel" name="phone" placeholder="Phone Number" id="phone-no" required>
+    <span id="phone-message"></span>
+
+    <input type="file" name="file_upload" accept=".pdf,.doc,.docx" required>
+
+    <select name="role" required>
+      <option value="">Select role</option>
+      <option value="software engineer">Software Engineer</option>
+      <option value="data analyst">Data Analyst</option>
+      <option value="internship">Internships</option>
+      <option value="other">Other</option>
+    </select>
+
+    <p>This is for you if you selected "other"</p>
+    <input type="text" name="other" id="other">
+
+    <button type="submit" class="fist-in" style="margin: 15px;">Apply</button>
+  </form>
+</body>
+</html>
+
+
+
+
+
